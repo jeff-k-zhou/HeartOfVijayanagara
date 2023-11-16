@@ -1,0 +1,30 @@
+@keyframes Zoom {
+    from {
+        transform: scale(1)
+    } to {
+        transform: scale(10);
+        opacity: 0;
+    }
+}
+
+@keyframes ZoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    } to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.zoom {
+    animation-name: Zoom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.zoomIn {
+    animation-name: ZoomIn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}

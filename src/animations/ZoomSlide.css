@@ -1,0 +1,41 @@
+@keyframes ZoomSlide {
+    0% {
+        transform: scale(0);
+        position: relative;
+        right: 0px;
+    } 80% {
+        transform: scale(1);
+        position: relative;
+        right: 0px;
+    } 100% {
+        position: relative;
+        right: 50px;
+    }
+}
+
+@keyframes ReverseZoomSlide {
+    0% {
+        position: relative;
+        right: 50px;
+    } 20% {
+        transform: scale(1);
+        position: relative;
+        right: 0px;
+    } 100% {
+        transform: scale(20);
+        position: relative;
+        right: 0px;
+        opacity: 0;
+    }
+}
+
+.zoomSlide {
+    animation-name: ZoomSlide;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.reverseZoomSlide {
+    animation-name: ReverseZoomSlide;
+    animation-duration: 2s;
+}
